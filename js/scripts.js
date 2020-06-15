@@ -10,7 +10,7 @@ ToDoList.prototype.assignId = function() {
 }
 
 ToDoList.prototype.addTask = function(task) {
-  task.id = this.assignId; 
+  task.id = this.assignId(); 
   this.tasks.push(task);
 }
 
@@ -19,6 +19,7 @@ ToDoList.prototype.changeTask = function(taskId, newTask) {
     if (this.tasks[i]) {
       if (this.tasks[i].id === taskId) {
         this.tasks[i].task = newTask;
+        return true;
       }
     }
   }
@@ -55,10 +56,13 @@ $(document).ready(function(){
       return;
     } 
     let task = new Task(inputtedTask);
+    console.log(task);
     toDoList.addTask(task);
+    console.log(toDoList);
     toDoList.tasks.forEach(function(element) {
       $("ul#tasks").append("<li>" + element.task + "</li>");
     });
+    $(".to-dos").show();
     $("input#task").val("");
   });
 });

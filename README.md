@@ -18,7 +18,7 @@ Webpage that creates and modify the to-do list.
 | Behavior | Input | Output|
 |----------|-------|-------|
 | Takes User input and returns it | Text | Text |
-| Checks if input is not empty | empty input | "Empty or incorrect input" |
+| Checks if input is not empty | empty input | "Please input your task" |
 | Add input task to the list | "Grocery shopping" | To-do: Grocery shopping |
 | Indicate a task is done. | "Read the Epicodus lesson"| "~Read the Epicodus lesson~" |
 | Remove the task from the list | "Do the project" | _"Do the project" removed from the list_ |
