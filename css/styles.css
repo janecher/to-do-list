@@ -7,10 +7,6 @@ h1{
   margin-bottom: 20px;
 }
 
-.to-dos{
-  display: none;
-}
-
 li{
   padding: 10px;
 }
@@ -18,4 +14,8 @@ li{
 .btn{
   background-color: rgb(206, 206, 238);
   border: 1px solid #8080EB;
+}
+
+.deleteButton{
+  margin-left: 10px;
 }
