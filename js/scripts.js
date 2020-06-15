@@ -42,6 +42,23 @@ function Task (task){
   this.isDone = false;
 }
 
-$(document).ready(function(){
+//UI Logic
+let toDoList = new ToDoList();
 
+$(document).ready(function(){
+  $("form").submit(function(event) {
+    event.preventDefault();
+    $("ul#tasks").children().remove();
+    let inputtedTask = $("input#task").val();
+    if(!inputtedTask) {
+      alert("Please input your task");
+      return;
+    } 
+    let task = new Task(inputtedTask);
+    toDoList.addTask(task);
+    toDoList.tasks.forEach(function(element) {
+      $("ul#tasks").append("<li>" + element.task + "</li>");
+    });
+    $("input#task").val("");
+  });
 });
