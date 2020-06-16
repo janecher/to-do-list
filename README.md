@@ -22,6 +22,7 @@ Webpage that creates and modify the to-do list.
 | Add input task to the list | "Grocery shopping" | To-do: Grocery shopping |
 | Indicate a task is done. | "Read the Epicodus lesson"| "~Read the Epicodus lesson~" |
 | Remove the task from the list | "Do the project" | _"Do the project" removed from the list_ |
+| Modify the task from the list | "Do the task 1" | "Do the task 2" |
 
 ## Known Bugs
 

@@ -7,8 +7,17 @@ h1{
   margin-bottom: 20px;
 }
 
+.form-control{
+  border: 1px solid #8080EB;
+}
+
 li{
   padding: 10px;
+  font-size: 18px;
+}
+
+.done {
+  text-decoration: line-through;
 }
 
 .btn{
@@ -16,6 +25,15 @@ li{
   border: 1px solid #8080EB;
 }
 
-.deleteButton{
-  margin-left: 10px;
+.deleteButton, .doneButton, .modifyButton{
+  margin-right: 10px;
+  background-color: rgb(206, 206, 238);
+  border: 1px solid #8080EB;
+  border-radius: 4px;
+  display: inline;
+}
+
+.tasks{
+  margin-top: 20px;
+  display: none;
 }
