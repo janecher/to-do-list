@@ -10,6 +10,7 @@ Webpage that creates and modify the to-do list.
 
 ## Setup/Installation Requirements
 
+* https://janecher.github.io/to-do-list/index.html
 * Clone/download the repository
 * Click on index.html file and see the result in the browser
 
