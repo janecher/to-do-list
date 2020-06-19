@@ -103,10 +103,6 @@ $(document).ready(function(){
   $("form").submit(function(event) {
     event.preventDefault();
     let inputtedTask = $("input#task").val();
-    if(!inputtedTask) {
-      alert("Please input your task");
-      return;
-    } 
     let task = new Task(inputtedTask);
     toDoList.addTask(task);
     $("input#task").val("");
